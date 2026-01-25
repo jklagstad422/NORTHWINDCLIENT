@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Northwind</title>
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+    <!-- bootstrap css -->
+    <link href="bootstrap.lumen.min.css" rel="stylesheet">
+
+    <!-- bootstrap js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+
+    <!-- client css -->
+    <link rel="stylesheet" href="client.css">
+</head>
+<body>
+
+<nav class="navbar border-bottom navbar-expand-md bg-primary-subtle">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <i class="bi bi-compass"></i> Northwind
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarScroll" aria-controls="navbarScroll"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0">
+                <li class="nav-item dropdown">
+                    <button class="nav-link dropdown-toggle" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                        Products
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Browse Categories</a></li>
+                        <li><a class="dropdown-item" href="#">Product Search</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Current Discounts</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav me-auto my-2 my-lg-0">
+                <li class="nav-item dropdown">
+                    <button class="nav-link dropdown-toggle" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                        Customers
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Register</a></li>
+                        <li><a class="dropdown-item" href="#">Customer Login</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="d-md-flex">
+            <form class="d-none d-md-flex" role="search">
+                <input class="form-control me-2" type="search"
+                       placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary" type="submit">
+                    <i class="bi bi-search"></i>
+                    <span class="visually-hidden">Search</span>
+                </button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<!-- ================= MAIN CONTENT ================= -->
+
+<div class="container-fluid py-4">
+    <div class="row g-3">
+
+        <div class="col-12">
+            <div class="p-4 border rounded bg-body">
+                <h1 class="h4 mb-2 fjalla-heading">
+                    Welcome to Northwind
+                </h1>
+                <p class="mb-3">
+                    Browse products, search inventory, and view current discounts.
+                </p>
+
+                <div class="d-flex flex-wrap gap-2">
+                    <a href="#" class="btn btn-primary btn-sm">
+                        <i class="bi bi-grid"></i> Categories
+                    </a>
+                    <a href="#" class="btn btn-outline-primary btn-sm">
+                        <i class="bi bi-search"></i> Search
+                    </a>
+                    <a href="#" class="btn btn-outline-secondary btn-sm">
+                        <i class="bi bi-percent"></i> Discounts
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h2 class="h6">
+                        <i class="bi bi-box-seam"></i> Products
+                    </h2>
+                    <p class="small mb-0">
+                        Explore items by category or supplier.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h2 class="h6">
+                        <i class="bi bi-people"></i> Customers
+                    </h2>
+                    <p class="small mb-0">
+                        Register or log in to manage orders.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h2 class="h6">
+                        <i class="bi bi-percent"></i> Discounts
+                    </h2>
+                    <p class="small mb-0">
+                        View items currently on sale.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h2 class="h6">
+                        <i class="bi bi-search"></i> Search
+                    </h2>
+                    <p class="small mb-0">
+                        Find products quickly by name.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
