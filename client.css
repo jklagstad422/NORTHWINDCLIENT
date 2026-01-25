@@ -1,3 +1,10 @@
-body {
-  font-family: 'Fjalla One', sans-serif;
+
+/* Override Bootstrap body font */
+:root{
+  --bs-body-font-family: "Fjalla One", sans-serif;
+}
+
+/* Optional heading emphasis */
+.fjalla-heading{
+  letter-spacing: 0.5px;
 }
