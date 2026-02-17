@@ -5,27 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Northwind</title>
 
-  <!-- favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-
-  <!-- bootstrap css -->
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- bootstrap icons -->
+  <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-  <!-- bootstrap js -->
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- google font -->
-  <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
-
-  <!-- client js -->
+  <!-- Client JS -->
   <script src="discount.js"></script>
 
-  <!-- client css -->
   <link rel="stylesheet" href="client.css" />
 </head>
 
@@ -50,53 +41,56 @@
   <div class="row p-2 m-2" id="discount-row">
 
     <!-- COL 1 -->
-    <div class="col px-2 py-4">
+    <div class="col px-2 py-4 border">
       <h3>Tis the seasoning</h3>
-      <div class="mb-4">
-        Order today! Save 12.5% on Chef Anton's Italian Seasoning.
+      <p><strong>Category:</strong> Spices</p>
+      <p><strong>Price:</strong> $22.00</p>
+      <div class="mb-3">
+        Save 12.5% on Chef Anton's Italian Seasoning.
       </div>
       <i>Discount expires: 2/25/2025</i><br />
-      <i class="bi bi-receipt"></i>
       <a href="#"
          class="discount"
          data-product="Chef Anton's Italian Seasoning"
          data-title="Tis the seasoning"
          data-code="NORTH-125">
-        Discount Code
+        <i class="bi bi-receipt"></i> Discount Code
       </a>
     </div>
 
     <!-- COL 2 -->
-    <div class="col px-2 py-4">
+    <div class="col px-2 py-4 border">
       <h3>Sweet deal</h3>
-      <div class="mb-4">
+      <p><strong>Category:</strong> Condiments</p>
+      <p><strong>Price:</strong> $25.00</p>
+      <div class="mb-3">
         Save 15% on Grandma's Boysenberry Spread.
       </div>
       <i>Discount expires: 3/10/2025</i><br />
-      <i class="bi bi-receipt"></i>
       <a href="#"
          class="discount"
          data-product="Grandma's Boysenberry Spread"
          data-title="Sweet deal"
          data-code="BERRY-15">
-        Discount Code
+        <i class="bi bi-receipt"></i> Discount Code
       </a>
     </div>
 
     <!-- COL 3 -->
-    <div class="col px-2 py-4">
+    <div class="col px-2 py-4 border">
       <h3>Crunch time</h3>
-      <div class="mb-4">
+      <p><strong>Category:</strong> Seafood</p>
+      <p><strong>Price:</strong> $40.00</p>
+      <div class="mb-3">
         Take 10% off Boston Crab Meat.
       </div>
       <i>Discount expires: 3/20/2025</i><br />
-      <i class="bi bi-receipt"></i>
       <a href="#"
          class="discount"
          data-product="Boston Crab Meat"
          data-title="Crunch time"
          data-code="CRAB-10">
-        Discount Code
+        <i class="bi bi-receipt"></i> Discount Code
       </a>
     </div>
 
@@ -109,17 +103,16 @@
        class="toast"
        role="alert"
        aria-live="assertive"
-       aria-atomic="true"
-       data-bs-autohide="false">
+       aria-atomic="true">
 
     <div class="toast-header">
       <strong class="me-auto" id="product">Product</strong>
-      <small class="text-body-secondary" id="discountTitle">discount title</small>
+      <small class="text-body-secondary" id="discountTitle"></small>
       <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
     </div>
 
     <div class="toast-body" id="discountCode">
-      Discount Code: 1234
+      Discount Code
     </div>
 
   </div>
