@@ -1,0 +1,94 @@
+/* Base bootstrap tweaks from the template */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html { font-size: 16px; }
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 60px;
+}
+
+/* Northwind style top bar for MVC layout */
+.northwind-nav {
+  background: linear-gradient(to bottom, #1f9ae0, #0a6db5);
+  padding: 0.5rem 2rem;
+  color: #fff;
+}
+.northwind-nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.northwind-left {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.northwind-brand {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+}
+.northwind-link {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+}
+.northwind-link:hover,
+.northwind-brand:hover {
+  color: #f5f5f5;
+  text-decoration: none;
+}
+.northwind-icon {
+  margin-right: 0.3rem;
+}
+.northwind-right {
+  display: flex;
+  align-items: center;
+}
+.northwind-search {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.northwind-search-input {
+  border: none;
+  padding: 0.35rem 0.75rem;
+  min-width: 220px;
+  font-size: 0.95rem;
+}
+.northwind-search-input:focus {
+  outline: none;
+}
+.northwind-search-btn {
+  border: none;
+  background-color: #0a6db5;
+  color: #fff;
+  padding: 0.35rem 0.7rem;
+  cursor: pointer;
+}
+
+/* Move body content down slightly */
+.container {
+  margin-top: 1.5rem;
+}
+
+/* Categories page: simple bullet list */
+.list-group {
+  border: none;
+  padding-left: 1.3rem;
+}
+.list-group-item {
+  border: none;
+  padding-left: 0;
+  padding-right: 0;
+}

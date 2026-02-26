@@ -1,0 +1,59 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Northwind</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="northwind-nav">
+            <div class="northwind-nav-inner">
+                <div class="northwind-left">
+                    <a class="northwind-brand" asp-controller="Product" asp-action="Category">
+                        Northwind
+                    </a>
+
+                    <a class="northwind-link" asp-controller="Product" asp-action="Category">
+                        <span class="northwind-icon">▣</span> Products
+                    </a>
+
+                    <a class="northwind-link" asp-controller="Home" asp-action="Index">
+                        <span class="northwind-icon">👥</span> Customers
+                    </a>
+                </div>
+
+                <div class="northwind-right">
+                    <div class="northwind-search">
+                        <input type="text" class="northwind-search-input" placeholder="Product Search" />
+                        <button class="northwind-search-btn">🔍</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2026 - Northwind Client
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,33 @@
+/* Import Fjalla One for this page */
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+/* Override Bootstrap body font */
+:root {
+  --bs-body-font-family: "Fjalla One", sans-serif;
+}
+
+/* Heading emphasis */
+.fjalla-heading {
+  letter-spacing: 0.5px;
+}
+
+/* Navbar tweaks (plain Bootstrap navbar on discount page) */
+.navbar-brand {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+/* Discount cards */
+#discount-row .col {
+  background-color: #ffffff;
+}
+
+/* Discount link style */
+a.discount {
+  font-weight: 600;
+  color: #0d6efd;
+  text-decoration: none;
+}
+a.discount:hover {
+  text-decoration: underline;
+}
