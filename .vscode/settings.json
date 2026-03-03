@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/b762de95-cb80-4726-a791-0a4984383a7e/resourceGroups/WCTC-Resources/providers/Microsoft.Web/sites/Northwind-jdk",
+    "appService.deploySubpath": "bin\\Publish"
+}
